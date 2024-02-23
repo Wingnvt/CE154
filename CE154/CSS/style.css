@@ -1,0 +1,442 @@
+
+/*inserts font so it can be used by program */
+@font-face{
+	font-family:TitlePixel;
+	src: url("../Fonts/MinecraftBold.otf");
+}
+/* removes white space around webpage + stops webpage from scrolling so i can control where the webpage scrolls and where it doesnt*/
+body{
+	padding:0;
+	margin:0;
+	overflow:hidden;
+	font-family:TitlePixel,cursive;
+}
+/* defines size of webpage/ size of user screen and the background colour*/
+.fullCon{
+	width:100vw;
+	height:100vh;
+	background-color:#EAE7DC;
+}
+/*defines size of left Container and keeps it to the left */
+.leftCon{
+	width:25%;
+	height:95%;
+	float:left;
+	
+}
+/* defined size of right container and makes it scrollable*/
+.rightCon{
+	width:75%;
+	height:95%;
+	overflow-y:scroll;
+	overflow-x:hidden;
+	float:left;
+	
+	
+}
+/* container for description of images so they dont scroll(as they shouldnt)*/
+.rightConItems{
+	width:75%;
+	height:95%;
+	overflow-y:hidden;
+	overflow-x:hidden;
+	float:left;
+}
+/* hides scroll bar for both containers */
+.rightConItems::-webkit-scrollbar{
+	display:none;
+}
+.rightCon::-webkit-scrollbar{
+	display:none;
+}
+/* defines size of container where the logo will be and where it will be*/
+.logo{
+	width:100%;
+	height:auto;
+	margin:0;
+	padding-left:18%;
+	line-height:auto;
+}
+
+/* defines size of the logo image*/
+.logoImage{
+	width:44vmin;
+	height:22vmin;
+	margin:0;
+	left:0;
+}
+/* defines size and location of directory container and keeps text in that location to be in the center*/
+.directorBlock{
+	width:100%;
+	height:47%;
+	margin:1%;
+	padding:0% 6% 0%;
+	text-align:center;
+}
+/* contains where the first row of socials go + size*/
+.socials1{
+	width:100%;
+	height:10%;
+	float:left;
+	margin:1%;
+	padding:0% 25% 0%;
+	
+}
+/* contains second row of socials plus where they go*/
+.socials2{
+	width:100%;
+	height:10%;
+	float:left;
+	margin:1%;
+	padding:0% 25% 0%;
+}
+/* the actual images for socialsm defining there size, making them float left of the div and slightly less opaque so look " turned of"*/
+.topIcons{
+	width:8vmin;
+	max-width:100%;
+	height:8vmin;
+	max-height:100%;
+	float:left;
+	margin:3%;
+	opacity:0.65;
+}
+/* same as top*/
+.bottomIcons{
+	width:8vmin;
+	max-width:100%;
+	height:8vmin;
+	max-height:100%;
+	float:left;
+	margin:3%;
+	opacity:0.65;
+	
+}
+/* removes bullet points of directory, makes directory scalable with webpage size*/
+.directory{
+	width:100%;
+	height:50%;
+	list-style-type:none;
+	font-size: 7vmin;
+	margin:0;
+	padding:0;
+	color:#28282B;
+}
+/* makes socials look "turned on" when hovered, indicates clickable nature*/
+.bottomIcons:hover{
+	opacity:1;
+}
+.topIcons:hover{
+	opacity:1;
+}
+/* highlights + orders items in directory container*/
+.itemDir{
+	padding:0;
+	margin-left:0;
+	margin-right:0;
+	margin-top:6%;
+
+}
+.itemDir:hover{
+	color:#71797E;
+}
+/*makes links not turn blue when clicked*/
+a{
+	color:inherit;
+	text-decoration:none;
+}
+/*Footer container*/
+.footer{
+	width:100%;
+	height:5%;
+	float:left;
+}
+/* container for images on shop and gallery*/
+#imageBlock{
+	float:left;
+	margin-top:2%;
+	margin-left:12%
+}
+/* container for detailed image*/
+#bigBlock{
+	margin-top:2%;
+	margin-left:3%;
+	width:40%;
+	height:90%;
+	float:left;
+}
+/* makes large images curved and defines size*/
+.bigImage{
+	border-radius:1%;
+	width:100%;
+	height:auto;
+}
+/* description of image + return to gallery part*/
+#backTo{
+	width:90%;
+	height:70%;
+	margin-top:5%;
+	margin-left:5%;
+	float:left;
+	overflow:hidden;
+	
+}
+/* makes words that need to be bigger, be bigger*/
+#title{
+	font-size:2vw;
+}
+/* makes all p tags same size*/
+p{
+	font-size:1vw;
+}
+/* makes images in gallery plus shop same size and rounded*/
+.galleryImage{
+	width:40%;
+	height:auto;
+	margin:2% 2%;
+	border-radius:2%;
+	transition:0.5s;
+}
+/* makes those images larger to indicate they can be clicked*/
+.galleryImage:hover{
+	transform: scale(1.04,1.04);
+}
+/* container for about section */
+#aboutPortion{
+	width:50%;
+	height:95%;
+	float:left;
+	
+}
+/* defines the size and location of the description of artists*/
+#aboutDesc{
+	height:90%;
+	float:left;
+	width:45%;
+	line-height:140%;
+	
+}
+/*defines size and location of the artist image */
+#aboutPic{
+	width:85%;
+	margin-left:5%;
+	margin-bottom:2%;
+	height:auto;
+	border-radius:2%;
+}
+/* defines size and location of the artist quote */
+#quote{
+	font-size: 2vw;
+	margin:0% 1%;
+	width:100%;
+	margin-left:4%;
+}
+/* establishes position of title The Artist */
+#titleAbout{
+	float:right;
+	width:40%;
+	font-size:2vw;
+	margin:0;
+	padding:0;
+}
+#titleArtist{
+	margin-top:4%;
+	margin-bottom:3%;
+	padding:0;
+}
+/* keeps quote beneath image div*/
+#quoteBlock{
+	width:100%;
+	margin:0;
+	padding:0;
+	word-wrap: break-word;
+	white-space: nowrap;
+}
+/*stop turning webpage into dark mode to it will always be light mode */
+:root {
+	color-scheme:only light;
+}
+/* deines size of checkout div*/
+.checkoutBlock{
+	float:left;
+}
+/* defines each item within the checkout*/
+.itemCheckoutBlock {
+	width:100%;
+	height:23%;
+	position:relative;
+	padding:3% 3% 3% 7%;
+	border-bottom:1px solid gray;
+	display:flex;
+	align-items:center;
+	
+	
+}
+/* keeps image div to left*/
+.imageHolder{
+	width:20%;
+	height:100%;
+	float:left;
+}
+/* defines size of image*/
+.picOfImg{
+	width:100%;
+	height:auto;
+	top:0;
+}
+/* defines size of desc and location*/
+.checkOutInfo{
+	width:17%;
+	height:100%;
+	float:left;
+	margin-right:8%;
+	margin-left:2%;
+	
+}
+.checkoutText{
+	display:inline-block;
+	
+}
+/* defines size of increase/decrease button and location and keeps those buttons in the center of the container*/
+.upOrDown{
+	width:17%;
+	height:100%;
+	display:flex;
+	align-items:center;
+	float:left;
+	margin-right:7%
+}
+/* same as top except for price*/
+.priceOfItem{
+	width:10%;
+	height:100%;
+	display:flex;
+	align-items:center;
+	float:left;
+	
+	
+}
+/* same as top except for remove button*/
+.closeButton{
+	width:7%;
+	height:100%;
+	float:left;
+	display:flex;
+	align-items:center;
+}
+/* removes unwanted parts of the button, makes it mesh with the webpage and and allows hovers to work slower */
+.minusAndPlus{
+	border:none;
+	background-color:#EAE7DC;
+	font-size:2.5vw;
+	opacity:0.8;
+	transition-duration: 0.1s;
+	color:gray;
+	
+  
+}
+/* makes buttons bigger and changes colour to indicate interactivity */
+.minusAndPlus:hover{
+	opacity:1;
+	transform:scale(1.3,1.3);
+	color:black;
+	
+	
+}
+/* defines size,location and colour for price of item*/
+.numberForAmount{
+	float:left;
+	font-size:1.7vw;
+	margin-left:10%;
+	margin-right:10%;
+	color:#333333;
+}
+/* for close button removes unwanted button parts and defines size of button*/
+.buttons{
+	float:left;
+	border:none;
+	background-color:#EAE7DC;
+	font-size:2.5vw;
+	opacity:0.8;
+	transition-duration: 0.1s;
+	color:gray;
+}
+/* makes clear button can be clicked by getting bigger and turning different colour*/
+.buttons:hover{
+	opacity:1;
+	transform:scale(1.3,1.3);
+	color:black;
+}
+/* for checkout button and total price*/
+.checkoutDiv{
+	width:100%;
+	height:50%;
+	float:left;
+}
+/* keeps checkout button to the right of the div its it in*/
+#checkoutButton{
+	padding-right:5%;
+	float:right;
+	border:none;
+	background-color:#EAE7DC;
+	font-size:1.7vw;
+	display:flex;
+	align-items:center;
+	opacity:0.7;
+	transition-duration: 0.1s;
+	color:#222222;
+}
+/* makes checkout button look clickable*/
+#checkoutButton:hover{
+	opacity:0.9;
+	transform:scale(1.03,1.03);
+}
+/* makes headings in shop gradient + plus define size of div*/
+.headingDiv{
+	width:98%;
+	height:11%;
+	font-size:1.8vw;
+	background:linear-gradient(to left,#EAE7DC 10%,#e0bbd2 100%);
+	
+}
+/* keeps headers in center */
+.header{
+	line-height:150%;
+	padding-right:6%;
+	text-align:center;
+}
+/*keeps description back to shop/gallery/checkout next to image together */
+.leftSide{
+	width:52%;
+	height:95%;
+	float:left;
+	overflow:hidden;
+}
+/* div for checkout button */
+.addToCart{
+	width:60%;
+	height:20%;
+	float:left;
+	position:relative;
+	padding-left:19%;
+}
+/* same as other buttons in another div*/
+#addToCartButton{
+	padding-right:10%;
+	font-family:TitlePixel,cursive;
+	border:none;
+	display:flex;
+	align-items:center;
+	background-color:#EAE7DC;
+	font-size:2.8vw;
+	transition-duration:0.5s;
+}
+#addToCartButton:hover{
+	transform:scale(1.07,1.07);
+}
+/* Copright info keeping centred */
+.footer{
+	text-align:center;
+}
+#footerP{
+	font-size:2vmin;
+}
